@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/e_commerce
+    password: ${POSTGRES_PASSWORD}
+    username: ${POSTGRES_USER}
+  jpa:
+     hibernate:
+        ddl-auto: update
+
+
+
+application:
+  security:
+    jwt:
+      secret-key: fe8hHYdZ1HK3eq0+crZU3gEPpN3BE2y9151YJ4OmHuDwv6qRYJ7MEtyHqBwKph3aonMi9VqCc00NUaSVKclikw==
+      expiration: 86400000
